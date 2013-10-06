@@ -1,0 +1,315 @@
+/* Table of Contents
+
+1. Resets
+
+*/
+
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+
+/* General
+------------------------------------------------*/
+
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+
+body {
+	font-family: helvetica, arial, sans-serif;
+	background:url("../images/debut_light.png") repeat center top;
+	line-height: 1;
+}
+
+ul {
+	margin-left: 20px;
+	list-style: disc inside;
+	line-height: 25px;
+}
+
+ul, ol {
+	margin-bottom: 20px;
+
+}
+
+li {padding: 5px 0;}
+
+ul ol {
+	margin-left: 20px;
+	font-style: italic;
+	
+}
+
+blockquote, q {
+	quotes: none;
+}
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+* {
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+}
+
+.clearfix {
+	clear: both;
+}
+
+/* Typography
+------------------------------------------------*/
+
+h1,h2,h3,h4,h5,h6 {
+	margin-bottom: 20px;
+	font-weight: bold;
+}
+
+h1 {font-size: 40px;}
+h2 {font-size: 30px;line-height: 35px;}
+h5 {margin-bottom: 10px;}
+
+h4 + em {margin-bottom: 20px; display: inline-block;}
+
+p {font-size: 1em; line-height: 25px; margin-bottom: 15px;}
+a {}
+a:hover {}
+
+em { font-style: italic;}
+
+strong {font-weight: bold; color:#0fa000;}
+
+h1.headline {
+	margin-top:50px;
+	-webkit-text-shadow: 1px 1px 1px #fff;
+	-moz-text-shadow: 1px 1px 1px #fff;
+	text-shadow: 1px 1px 1px #fff;
+}
+
+.section_title {
+    border-bottom: 1px dashed #ccc;
+    padding: 0 0 10px;
+    font-weight: 100;
+}
+
+.section_title small {font-size: 15px;}
+
+/* Framework
+------------------------------------------------*/
+
+section {
+	margin: 0 0 30px;
+}
+
+#wrapper {
+	width:100%;
+
+}
+
+#wrapper .container {
+	width:100%;
+	max-width:960px;
+	margin: 0 auto;
+}
+
+#wrapper .content {
+	width:100%;
+	max-width:960px;
+	margin: 0 auto;
+	background: #ffffff;
+	padding: 20px;
+	-moz-border-radius: 6px;
+	-webkit-border-radius: 6px;
+	border-radius: 6px;
+	box-shadow: 0 0 3px rgba(0,0,0,0.3);
+	-moz-box-shadow: 0 0 3px rgba(0,0,0,0.3);
+	-webkit-box-shadow: 0 0 3px rgba(0,0,0,0.3);
+
+}
+
+.fullwidth {
+	width:100%;
+	padding:0 20px;
+	margin: 0 auto;
+}
+
+.two_third {
+	width:75%;
+}
+
+.one_half {
+	width:48.5%;
+}
+
+.one_third {
+    width: 31.334918%;
+	
+}
+
+.column {
+	margin-bottom: 20px;
+	float:left;
+	margin-right: 3%;
+}
+
+.column.last {
+	margin-right: 0;
+}
+
+.right {
+	float:right;
+}
+
+.left {
+	float: left;
+}
+
+
+/* Header Section
+------------------------------------------------*/
+
+#header {
+	margin: 30px 0;
+	text-align: center;
+}
+
+#header .logo {
+	background: url("../images/logo400_web.png") no-repeat center 0 transparent;
+	background-size: 100%;
+	width:100%;
+	max-width: 400px;
+	height: 156px;
+	margin:0 auto;
+}
+
+#top_bar {
+	background: url("../images/debut_dark.png") repeat center top;
+	text-align: center;
+	border-bottom: 1px solid #fff;
+}
+
+#top_bar ul.overview {
+	margin: 0 auto;
+}
+
+#top_bar ul.overview li {
+	color:#fff;
+	display:inline-block;
+	padding: 10px 20px 10px 0;
+	margin-right: 20px;
+}
+
+#top_bar ul.overview li:last-child {
+	margin:0;
+	padding:0;
+	border-radius: 0;
+} 
+
+#top_bar ul.overview li span {
+	text-transform: uppercase;
+	font-size: 10px;
+	color:#0fa000;
+	font-weight: bold;
+}
+
+/* Competitor Analysis
+------------------------------------------------*/
+
+.alexa_ranking {
+	-moz-border-radius:6px;
+	-webkit-border-radius:6px;
+	border-radius:6px;
+	border: 1px solid #0e3ca6;
+	overflow: hidden;
+	background: #ecf5ff;
+	padding:10px;
+	margin: 0 0 30px;
+	display: block;
+}
+
+
+.alexa_ranking .alex_logo {
+	background: url("../images/alexa-logo.png") no-repeat center 0 transparent;
+	background-size: cover;
+	width:30px;
+	height:28px;
+	margin-right: 10px;
+}
+
+.alexa_ranking ul {
+	margin: 0;
+	overflow: hidden;
+}
+
+.alexa_ranking ul li {
+
+	vertical-align: middle;
+	display:inline-block;
+}
+
+
+
+
+/* Footer
+------------------------------------------------*/
+
+.prepared {
+	text-align: center;
+	font-size: 12px;
+	color:#888;
+	margin: 10px 0;
+}
+
+
+
+/* Media Queries
+------------------------------------------------*/
+
+/* Landscape phones and down */
+@media (max-width: 480px) {
+	.one_third, .one_half {width:100%;}
+	#top_bar ul.overview li {margin: 0; padding: 0px 0; display: block;}
+}
+
+/* Landscape phone to portrait tablet */
+@media (max-width: 767px) {
+
+}
+
+/* Portrait tablet to landscape and desktop */
+@media (min-width: 768px) and (max-width: 979px) {
+
+}
+
+/* Large desktop */
+@media (min-width: 1200px) {
+	
+}
+
